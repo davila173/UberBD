@@ -392,15 +392,15 @@ INSERT INTO PAISES (ID, NOMBRE, MONEDA, INDICATIVO) VALUES(24, 'BOLIVIA', 'USD',
 INSERT INTO CIUDADES (ID, NOMBRE, CODIGO_POSTAL, PAIS_ID) VALUES(33, 'MEDELLIN', '050001', 10);
 INSERT INTO CIUDADES (ID, NOMBRE, CODIGO_POSTAL, PAIS_ID) VALUES(34, 'CALI', '050401', 10);
 INSERT INTO CIUDADES (ID, NOMBRE, CODIGO_POSTAL, PAIS_ID) VALUES(35, 'BOGOTA', '051001', 10);
-INSERT INTO CIUDADES (ID, NOMBRE, CODIGO_POSTAL, PAIS_ID) VALUES(36, 'NUEVAYORK', '4556', 14);
-INSERT INTO CIUDADES (ID, NOMBRE, CODIGO_POSTAL, PAIS_ID) VALUES(37, 'BERLIN', '765764', 45);
-INSERT INTO CIUDADES (ID, NOMBRE, CODIGO_POSTAL, PAIS_ID) VALUES(38, 'PARIS', '45664', 09);
-INSERT INTO CIUDADES (ID, NOMBRE, CODIGO_POSTAL, PAIS_ID) VALUES(39, 'NEW JERSEY', '24355', 14);
-INSERT INTO CIUDADES (ID, NOMBRE, CODIGO_POSTAL, PAIS_ID) VALUES(40, 'BUENOS AIRES', '45646', 17);
-INSERT INTO CIUDADES (ID, NOMBRE, CODIGO_POSTAL, PAIS_ID) VALUES(41, 'LA PAZ', '35636', 00);
-INSERT INTO CIUDADES (ID, NOMBRE, CODIGO_POSTAL, PAIS_ID) VALUES(42, 'AMSTERDAM', '050001', 44);
-INSERT INTO CIUDADES (ID, NOMBRE, CODIGO_POSTAL, PAIS_ID) VALUES(43, 'TOKIO', '35635633', 12);
-INSERT INTO CIUDADES (ID, NOMBRE, CODIGO_POSTAL, PAIS_ID) VALUES(44, 'RIO JANEIRO', '134112', 78);
+INSERT INTO CIUDADES (ID, NOMBRE, CODIGO_POSTAL, PAIS_ID) VALUES(36, 'NUEVA YORK', '4556', 11);
+INSERT INTO CIUDADES (ID, NOMBRE, CODIGO_POSTAL, PAIS_ID) VALUES(37, 'BERLIN', '765764', 13);
+INSERT INTO CIUDADES (ID, NOMBRE, CODIGO_POSTAL, PAIS_ID) VALUES(38, 'PARIS', '45664', 17);
+INSERT INTO CIUDADES (ID, NOMBRE, CODIGO_POSTAL, PAIS_ID) VALUES(39, 'NEW JERSEY', '24355', 11);
+INSERT INTO CIUDADES (ID, NOMBRE, CODIGO_POSTAL, PAIS_ID) VALUES(40, 'BUENOS AIRES', '45646', 22);
+INSERT INTO CIUDADES (ID, NOMBRE, CODIGO_POSTAL, PAIS_ID) VALUES(41, 'LA PAZ', '35636', 24);
+INSERT INTO CIUDADES (ID, NOMBRE, CODIGO_POSTAL, PAIS_ID) VALUES(42, 'AMSTERDAM', '050001', 13);
+INSERT INTO CIUDADES (ID, NOMBRE, CODIGO_POSTAL, PAIS_ID) VALUES(43, 'TOKIO', '35635633', 18);
+INSERT INTO CIUDADES (ID, NOMBRE, CODIGO_POSTAL, PAIS_ID) VALUES(44, 'RIO JANEIRO', '134112', 14);
  
 --CLIENTES
 
@@ -2209,151 +2209,154 @@ VALUES (100.0, '2914784228', 'Pearl', 'Tiltman', 'https://robohash.org/aperiamse
 
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (2.0, '5479465791', 'Collier Inc', '5378 Loeprich Crossing', '254-589-0392', 'mclague1@adobe.com');
+VALUES (1, '8909001234', 'Municipio de Medellin', 'CALLE 44 # 52-180', '4457766', 'medellin.gov.co');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (3.0, '9910202603', 'Kirlin Group', '36 Corscot Road', '248-295-7438', 'mkedie2@multiply.com');
+VALUES (2, '5479465791', 'Collier Inc', '5378 Loeprich Crossing', '254-589-0392', 'mclague1@adobe.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (4.0, '6927328351', 'Lubowitz, Emard and Bergstrom', '8 Sommers Circle', '613-491-6374', 'zstledger3@examiner.com');
+VALUES (3, '9910202603', 'Kirlin Group', '36 Corscot Road', '248-295-7438', 'mkedie2@multiply.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (5.0, '6455707575', 'Fay, Yundt and Johnston', '84 Old Gate Alley', '918-850-6031', 'hmoorey4@alexa.com');
+VALUES (4, '6927328351', 'Lubowitz, Emard and Bergstrom', '8 Sommers Circle', '613-491-6374', 'zstledger3@examiner.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (6.0, '9481808351', 'Armstrong, Langosh and Fay', '46 Monica Center', '165-488-9161', 'sargyle5@fc2.com');
+VALUES (5, '6455707575', 'Fay, Yundt and Johnston', '84 Old Gate Alley', '918-850-6031', 'hmoorey4@alexa.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (7.0, '8434366258', 'Lang-Upton', '0346 Judy Place', '805-439-0533', 'jmullin6@youtu.be');
+VALUES (6, '9481808351', 'Armstrong, Langosh and Fay', '46 Monica Center', '165-488-9161', 'sargyle5@fc2.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (8.0, '2066239631', 'Blick Group', '69 6th Lane', '800-739-5482', 'ccolbert7@skype.com');
+VALUES (7, '8434366258', 'Lang-Upton', '0346 Judy Place', '805-439-0533', 'jmullin6@youtu.be');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (9.0, '4844386956', 'Bode, Wisozk and Russel', '3 Fremont Lane', '864-250-6805', 'gdrinan8@google.pl');
+VALUES (8, '2066239631', 'Blick Group', '69 6th Lane', '800-739-5482', 'ccolbert7@skype.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (10.0, '7499774597', 'McClure-Fadel', '8583 Sunbrook Drive', '690-341-7423', 'jelesander9@ehow.com');
+VALUES (9, '4844386956', 'Bode, Wisozk and Russel', '3 Fremont Lane', '864-250-6805', 'gdrinan8@google.pl');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (11.0, '7328946571', 'Price-Kshlerin', '8 Arrowood Park', '619-671-2188', 'aservicea@lycos.com');
+VALUES (10, '7499774597', 'McClure-Fadel', '8583 Sunbrook Drive', '690-341-7423', 'jelesander9@ehow.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (12.0, '7498557657', 'Beatty, Wilkinson and Hermann', '10437 Ohio Avenue', '847-821-9565', 'sdrewittb@addthis.com');
+VALUES (11, '7328946571', 'Price-Kshlerin', '8 Arrowood Park', '619-671-2188', 'aservicea@lycos.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (13.0, '1945772603', 'McCullough-Schinner', '187 Lotheville Crossing', '442-902-6264', 'hjobinc@ucoz.com');
+VALUES (12, '7498557657', 'Beatty, Wilkinson and Hermann', '10437 Ohio Avenue', '847-821-9565', 'sdrewittb@addthis.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (14.0, '7974439157', 'Leffler-Ruecker', '062 Longview Street', '669-120-4741', 'mkondratowiczd@techcrunch.com');
+VALUES (13, '1945772603', 'McCullough-Schinner', '187 Lotheville Crossing', '442-902-6264', 'hjobinc@ucoz.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (15.0, '8473033124', 'Skiles-Oberbrunner', '6 Susan Crossing', '768-486-8508', 'hbuggse@cyberchimps.com');
+VALUES (14, '7974439157', 'Leffler-Ruecker', '062 Longview Street', '669-120-4741', 'mkondratowiczd@techcrunch.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (16.0, '0637011481', 'Breitenberg, Smith and Koss', '98515 Vera Plaza', '850-879-3259', 'aniesegenf@sakura.ne.jp');
+VALUES (15, '8473033124', 'Skiles-Oberbrunner', '6 Susan Crossing', '768-486-8508', 'hbuggse@cyberchimps.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (17.0, '2547498405', 'Reilly-Conn', '787 Petterle Lane', '707-649-8243', 'tlitherboroughg@upenn.edu');
+VALUES (16, '0637011481', 'Breitenberg, Smith and Koss', '98515 Vera Plaza', '850-879-3259', 'aniesegenf@sakura.ne.jp');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (18.0, '8495768607', 'Dare-Wyman', '98 Hoffman Point', '176-415-2025', 'wtriggsh@miibeian.gov.cn');
+VALUES (17, '2547498405', 'Reilly-Conn', '787 Petterle Lane', '707-649-8243', 'tlitherboroughg@upenn.edu');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (19.0, '8056077049', 'Moore-Boehm', '338 Elgar Road', '364-254-1956', 'rbygrovei@wikipedia.org');
+VALUES (18, '8495768607', 'Dare-Wyman', '98 Hoffman Point', '176-415-2025', 'wtriggsh@miibeian.gov.cn');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (20.0, '4086124068', 'Schmeler, Langworth and Bins', '170 Burning Wood Park', '203-690-6648', 'gdelamarj@slate.com');
+VALUES (19, '8056077049', 'Moore-Boehm', '338 Elgar Road', '364-254-1956', 'rbygrovei@wikipedia.org');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (21.0, '1720829195', 'Dare Inc', '32381 North Trail', '479-896-0528', 'tmaccostyk@reddit.com');
+VALUES (20, '4086124068', 'Schmeler, Langworth and Bins', '170 Burning Wood Park', '203-690-6648', 'gdelamarj@slate.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (22.0, '9569728450', 'Bauch LLC', '954 5th Drive', '368-918-4267', 'jgolledgel@hatena.ne.jp');
+VALUES (21, '1720829195', 'Dare Inc', '32381 North Trail', '479-896-0528', 'tmaccostyk@reddit.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (23.0, '1217951768', 'Hoppe LLC', '8427 Westport Court', '413-166-2241', 'jerettm@quantcast.com');
+VALUES (22, '9569728450', 'Bauch LLC', '954 5th Drive', '368-918-4267', 'jgolledgel@hatena.ne.jp');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (24.0, '5872168349', 'Welch Group', '683 Armistice Crossing', '157-227-7706', 'elaverackn@ning.com');
+VALUES (23, '1217951768', 'Hoppe LLC', '8427 Westport Court', '413-166-2241', 'jerettm@quantcast.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (25.0, '5923623587', 'Hermann-Abbott', '7 Schlimgen Center', '411-559-3182', 'sinkleso@google.ca');
+VALUES (24, '5872168349', 'Welch Group', '683 Armistice Crossing', '157-227-7706', 'elaverackn@ning.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (26.0, '6199962559', 'Gaylord Inc', '7817 Emmet Drive', '836-921-2936', 'ciansonp@imgur.com');
+VALUES (25, '5923623587', 'Hermann-Abbott', '7 Schlimgen Center', '411-559-3182', 'sinkleso@google.ca');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (27.0, '6938583765', 'Hahn Inc', '9605 Chive Street', '780-477-0071', 'dortmannq@xing.com');
+VALUES (26, '6199962559', 'Gaylord Inc', '7817 Emmet Drive', '836-921-2936', 'ciansonp@imgur.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (28.0, '6902002436', 'Steuber-Runolfsdottir', '3175 Merchant Court', '643-154-7829', 'hivanyushkinr@acquirethisname.com');
+VALUES (27, '6938583765', 'Hahn Inc', '9605 Chive Street', '780-477-0071', 'dortmannq@xing.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (29.0, '9685723737', 'O''Conner LLC', '51 Sommers Terrace', '906-606-6482', 'cwyons@facebook.com');
+VALUES (28, '6902002436', 'Steuber-Runolfsdottir', '3175 Merchant Court', '643-154-7829', 'hivanyushkinr@acquirethisname.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (30.0, '2230454439', 'Lind and Sons', '8 Emmet Plaza', '235-121-1827', 'hjanicijevict@xing.com');
+VALUES (29, '9685723737', 'O''Conner LLC', '51 Sommers Terrace', '906-606-6482', 'cwyons@facebook.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (31.0, '9481719006', 'Quitzon, Wolf and Hintz', '405 Elgar Place', '105-812-0234', 'kkollasu@nba.com');
+VALUES (30, '2230454439', 'Lind and Sons', '8 Emmet Plaza', '235-121-1827', 'hjanicijevict@xing.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (32.0, '2027960414', 'Jaskolski and Sons', '82783 Hintze Road', '730-192-0768', 'vsparev@sbwire.com');
+VALUES (31, '9481719006', 'Quitzon, Wolf and Hintz', '405 Elgar Place', '105-812-0234', 'kkollasu@nba.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (33.0, '1311073809', 'Lindgren and Sons', '03362 Caliangt Alley', '838-476-4283', 'smeecherw@shinystat.com');
+VALUES (32, '2027960414', 'Jaskolski and Sons', '82783 Hintze Road', '730-192-0768', 'vsparev@sbwire.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (34.0, '7789249983', 'Kuhn-Ondricka', '9 Sachs Court', '289-859-3400', 'hkuschekx@mit.edu');
+VALUES (33, '1311073809', 'Lindgren and Sons', '03362 Caliangt Alley', '838-476-4283', 'smeecherw@shinystat.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (35.0, '1008801550', 'Stark, Koelpin and Brown', '53 Surrey Park', '522-211-0663', 'dpavluky@linkedin.com');
+VALUES (34, '7789249983', 'Kuhn-Ondricka', '9 Sachs Court', '289-859-3400', 'hkuschekx@mit.edu');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (36.0, '7510945526', 'Terry, Hermann and Feest', '1101 Clemons Junction', '365-615-2625', 'sbushellz@multiply.com');
+VALUES (35, '1008801550', 'Stark, Koelpin and Brown', '53 Surrey Park', '522-211-0663', 'dpavluky@linkedin.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (37.0, '4823708733', 'Bruen LLC', '0 Haas Avenue', '888-598-7289', 'bmcadam10@fc2.com');
+VALUES (36, '7510945526', 'Terry, Hermann and Feest', '1101 Clemons Junction', '365-615-2625', 'sbushellz@multiply.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (38.0, '2484050631', 'Spencer, Waters and Heaney', '631 Hooker Street', '255-102-0755', 'rgenese11@telegraph.co.uk');
+VALUES (37, '4823708733', 'Bruen LLC', '0 Haas Avenue', '888-598-7289', 'bmcadam10@fc2.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (39.0, '4640458177', 'Keebler and Sons', '397 Hazelcrest Way', '258-732-5467', 'ocherm12@google.ca');
+VALUES (38, '2484050631', 'Spencer, Waters and Heaney', '631 Hooker Street', '255-102-0755', 'rgenese11@telegraph.co.uk');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (40.0, '4974595504', 'Russel and Sons', '6 Westridge Road', '185-354-3592', 'cbenoix13@youku.com');
+VALUES (39, '4640458177', 'Keebler and Sons', '397 Hazelcrest Way', '258-732-5467', 'ocherm12@google.ca');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (41.0, '7138199856', 'VonRueden, Wiza and Larson', '70 Luster Point', '611-321-5346', 'bdeclerq14@unc.edu');
+VALUES (40, '4974595504', 'Russel and Sons', '6 Westridge Road', '185-354-3592', 'cbenoix13@youku.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (42.0, '5848813442', 'Dickens and Sons', '372 Morning Place', '172-905-8573', 'mgreated15@nhs.uk');
+VALUES (41, '7138199856', 'VonRueden, Wiza and Larson', '70 Luster Point', '611-321-5346', 'bdeclerq14@unc.edu');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (43.0, '9485583567', 'Wolff-Rosenbaum', '69641 Erie Plaza', '441-408-5413', 'savarne16@macromedia.com');
+VALUES (42, '5848813442', 'Dickens and Sons', '372 Morning Place', '172-905-8573', 'mgreated15@nhs.uk');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (44.0, '5481304228', 'Cormier Group', '626 Green Ridge Crossing', '146-772-4098', 'adrysdall17@shop-pro.jp');
+VALUES (43, '9485583567', 'Wolff-Rosenbaum', '69641 Erie Plaza', '441-408-5413', 'savarne16@macromedia.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (45.0, '1603299300', 'Miller LLC', '64 Pankratz Hill', '987-351-2922', 'tfitton18@surveymonkey.com');
+VALUES (44, '5481304228', 'Cormier Group', '626 Green Ridge Crossing', '146-772-4098', 'adrysdall17@shop-pro.jp');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (46.0, '8341659921', 'Erdman-McCullough', '80691 Lukken Place', '622-894-3499', 'mloeber19@wikia.com');
+VALUES (45, '1603299300', 'Miller LLC', '64 Pankratz Hill', '987-351-2922', 'tfitton18@surveymonkey.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (47.0, '6832510470', 'Schaden-Pagac', '07806 Cascade Terrace', '501-299-0290', 'mpollett1a@icq.com');
+VALUES (46, '8341659921', 'Erdman-McCullough', '80691 Lukken Place', '622-894-3499', 'mloeber19@wikia.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (48.0, '4086468506', 'Klocko Inc', '0 Golf View Road', '834-302-7011', 'gsauniere1b@yale.edu');
+VALUES (47, '6832510470', 'Schaden-Pagac', '07806 Cascade Terrace', '501-299-0290', 'mpollett1a@icq.com');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (49.0, '0035160969', 'Ward Group', '375 Thierer Alley', '878-819-0946', 'gbrito1c@imgur.com');
+VALUES (48, '4086468506', 'Klocko Inc', '0 Golf View Road', '834-302-7011', 'gsauniere1b@yale.edu');
 
 INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
-VALUES (50.0, '6801279165', 'Monahan, Abernathy and Aufderhar', '5607 Susan Lane', '128-711-0883', 'tbeaten1d@wunderground.com');
+VALUES (49, '0035160969', 'Ward Group', '375 Thierer Alley', '878-819-0946', 'gbrito1c@imgur.com');
+
+INSERT INTO EMPRESAS (ID, NIT, NOMBRE, DIRECCION, TELEFONO, CORREO) 
+VALUES (50, '6801279165', 'Monahan, Abernathy and Aufderhar', '5607 Susan Lane', '128-711-0883', 'tbeaten1d@wunderground.com');
 
 --MEDIOS DE PAGOS
 Insert into MEDIOS_PAGO (ID,DESCRIPCION) values ('523','EFECTIVO');
