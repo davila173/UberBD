@@ -3397,24 +3397,3 @@ SELECT * FROM DETALLES_FACTURAS;
 
 
 		
-		--DROPS
-		
-drop table CLIENTES cascade constraints;
-drop table MEDIOS_PAGO cascade constraints;
-drop table SERVICIOS cascade constraints;
-drop table VEHICULOS cascade constraints;
-drop table CONDUCTORES_VEHICULOS cascade constraints;
-drop table DETALLES_UBICACION_SERVICIOS cascade constraints;
-drop table CLIENTES_EMPRESAS cascade constraints;
-drop table FACTURAS cascade constraints;
-drop table IDIOMAS  cascade constraints;
-drop table PAISES  cascade constraints;
-drop table CIUDADES cascade constraints;
-drop table EMAILS cascade constraints;
-drop table ENVIO_RECIBOS cascade constraints;
-drop table CODIGOS_PROMOCIONALES  cascade constraints;
-drop table CONDUCTORES  cascade constraints;
-drop table EMPRESAS  cascade constraints;
-drop table EMPRESAS_MEDIOS_PAGO  cascade constraints;
-drop table DETALLES_FACTURAS   cascade constraints; 
-drop table PAGOS_CONDUCTORES  cascade constraints;
