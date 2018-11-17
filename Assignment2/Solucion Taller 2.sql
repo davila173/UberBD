@@ -124,3 +124,52 @@ END;
 
 -- EJECUTAMOS LA FUNCION
 SELECT VALOR_TIEMPO(50,'BOGOTA') AS TARIFA FROM DUAL;
+
+-- Punto 7
+
+CREATE OR REPLACE PROCEDURE CALCULAR_TARIFA (ID_SERVICIO IN NUMBER) AS
+    REALIZADO NUMBER:= 0;
+BEGIN
+
+    -- Obtener y validar servicio realizado
+    SELECT COUNT(*) INTO REALIZADO FROM SERVICIOS
+    WHERE ID = ID_SERVICIO AND ESTADO = 'REALIZADO';
+
+    -- Realiza validacion de viaje realizado
+    IF (REALIZADO > 0)
+    THEN
+       DECLARE
+        ID_FACTURA NUMBER:=0;
+        TARIFA NUMBER:=0;
+       BEGIN
+          SELECT FAC.ID,
+            (CIU.TARIFA_BASE + VALOR_DISTANCIA(SER.DISTANCIA, CIU.NOMBRE) + VALOR_TIEMPO(SER.TIEMPO_REQUERIDO, CIU.NOMBRE)
+            + SUM(DETFAC.VALOR)) AS VALOR_TOTAL
+            INTO ID_FACTURA, TARIFA
+            FROM SERVICIOS SER
+                INNER JOIN FACTURAS FAC ON FAC.SERVICIO_ID = SER.ID
+                INNER JOIN DETALLES_FACTURAS DETFAC ON DETFAC.FACTURA_ID = FAC.ID
+                INNER JOIN CLIENTES CLI ON SER.CLIENTE_ID = CLI.ID
+                INNER JOIN CIUDADES CIU ON CLI.CIUDAD_ID = CIU.ID
+            WHERE SER.ID = ID_SERVICIO
+            GROUP BY FAC.ID, CIU.TARIFA_BASE, SER.DISTANCIA, SER.TIEMPO_REQUERIDO, CIU.NOMBRE;
+            
+            -- Actualizar informacion
+            UPDATE FACTURAS SET VALOR = TARIFA
+                WHERE ID = ID_FACTURA;
+        END;
+        ELSE
+            DECLARE
+                ID_FACTURA NUMBER:=0;
+            BEGIN
+                SELECT FAC.ID INTO ID_FACTURA
+                FROM SERVICIOS SER
+                INNER JOIN FACTURAS FAC ON FAC.SERVICIO_ID = SER.ID
+                WHERE SER.ID = ID_SERVICIO;
+                
+                -- Actualizar informacion
+                UPDATE FACTURAS SET VALOR = 0
+                    WHERE ID = ID_FACTURA;
+            END;    
+    END IF;
+END;
